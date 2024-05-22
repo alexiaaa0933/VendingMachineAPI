@@ -1,0 +1,36 @@
+Now listening on: https://localhost:7252
+Now listening on: http://localhost:5219
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: D:\Nagarro\Maria.Alexia.German\Module 2\VendingMachine.Api
+Getting the list of products
+Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Description", "p"."Price", "p"."Quantity"
+FROM "Products" AS "p"
+Now listening on: https://localhost:7252
+Now listening on: http://localhost:5219
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: D:\Nagarro\Maria.Alexia.German\Module 2\VendingMachine.Api
+Getting the list of products
+Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Description", "p"."Price", "p"."Quantity"
+FROM "Products" AS "p"
+Created a product entity with the id: 00000000-0000-0000-0000-000000000000, name: Lay's chips
+Executed DbCommand (4ms) [Parameters=[@__product_Name_0='?' (Size = 11)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Products" AS "p"
+    WHERE "p"."Name" = @__product_Name_0)
+Executed DbCommand (121ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (Size = 18), @p3='?' (DbType = Double), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "Name", "Description", "Price", "Quantity")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+Getting the list of products
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Description", "p"."Price", "p"."Quantity"
+FROM "Products" AS "p"
+Now listening on: https://localhost:7252
+Now listening on: http://localhost:5219
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: D:\Nagarro\Maria.Alexia.German\Module 2\VendingMachine.Api
